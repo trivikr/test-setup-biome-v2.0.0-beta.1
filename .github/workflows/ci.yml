@@ -1,0 +1,14 @@
+name: ci
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup Biome CLI
+        uses: biomejs/setup-biome@v2
+      - run: biome --version
