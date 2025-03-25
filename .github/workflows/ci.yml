@@ -11,3 +11,4 @@ jobs:
     steps:
       - name: Setup Biome CLI
         uses: biomejs/setup-biome@v2
+      - run: biome --version
