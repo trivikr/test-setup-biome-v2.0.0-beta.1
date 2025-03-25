@@ -1,0 +1,12 @@
+name: ci
+
+on:
+  workflow_call:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup Biome CLI
+        uses: biomejs/setup-biome@v2
